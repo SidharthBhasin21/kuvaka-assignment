@@ -17,7 +17,7 @@ const Hero = () => {
   return (
     <div className='hero-container'>
         <div className='hero-ring'>
-          
+          <img src={logo}/>
         </div>
         <div className='hero-text'>
             <h2>CHANGE YOUR HABITS

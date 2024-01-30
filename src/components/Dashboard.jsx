@@ -16,7 +16,7 @@ import Error from "./Error";
 
 
 const Dashboard = () => {
-    const auth = useSelector(store => store.auth.credential)
+    const auth = useSelector(store => store.auth)
     console.log(auth);
   const [view, setView] = useState("add_new");
 
@@ -29,7 +29,7 @@ const Dashboard = () => {
   }
 
 
-  return ( auth ?
+  return ( auth.value ?
     <div className="dashboard-container">
       <div className="sidebar">
         <div className="dashboard-logo">
