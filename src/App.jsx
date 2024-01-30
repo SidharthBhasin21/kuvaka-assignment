@@ -15,8 +15,8 @@ function App() {
         <Hero />
         <Features />
         <Pricing />
+        <Footer />
       </div>
-      <Footer />
     </>
   );
 }

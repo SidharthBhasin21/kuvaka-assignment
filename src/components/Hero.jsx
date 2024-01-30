@@ -17,7 +17,12 @@ const Hero = () => {
   return (
     <div className='hero-container'>
         <div className='hero-ring'>
-          <img src={logo}/>
+          <img src={logo} className='hero-logo'/>
+          <img src={img1} className='ellipse img1'/>
+          <img src={img2} className='ellipse img2'/>
+          <img src={img3} className='ellipse img3'/>
+          <img src={img4} className='ellipse img4'/>
+          <img src={img5} className='ellipse img5'/>
         </div>
         <div className='hero-text'>
             <h2>CHANGE YOUR HABITS
