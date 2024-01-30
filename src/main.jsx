@@ -1,13 +1,14 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
-import './index.css'
-import { RouterProvider, createBrowserRouter } from 'react-router-dom';
-import Signup from './components/Signup.jsx';
-import Trynow from './components/Trynow.jsx';
-import Dashboard from './components/Dashboard.jsx';
-import { GoogleOAuthProvider } from '@react-oauth/google';
-
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App.jsx";
+import "./index.css";
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import Signup from "./components/Signup.jsx";
+import Trynow from "./components/Trynow.jsx";
+import Dashboard from "./components/Dashboard.jsx";
+import { GoogleOAuthProvider } from "@react-oauth/google";
+import appStore from "./utils/appStore.js";
+import { Provider } from "react-redux";
 
 const router = createBrowserRouter([
   {
@@ -24,19 +25,18 @@ const router = createBrowserRouter([
   },
   {
     path: "/dashboard",
-    element: <Dashboard/>,
+    element: <Dashboard />,
   },
-  
 ]);
-ReactDOM.createRoot(document.getElementById('root')).render(
+ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-  <GoogleOAuthProvider
+    <GoogleOAuthProvider
       clientId={
         "465092147184-8pvrc42qr1edmc6208i626ukeqin0agh.apps.googleusercontent.com"
       }
     >
-    <RouterProvider router={router} />
-      
+      <RouterProvider router={router} />
     </GoogleOAuthProvider>
-  </React.StrictMode>,
-)
+    <Provider store={appStore}></Provider>
+  </React.StrictMode>
+);

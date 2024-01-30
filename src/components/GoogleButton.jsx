@@ -1,16 +1,23 @@
 import { GoogleLogin } from "@react-oauth/google";
+import { useNavigate } from "react-router-dom";
+import { setUser } from "../utils/slices/authSlice";
 
-const responseGoogle = (response) => {
-  const { profileObj } = response;
-  console.log(`Welcome, ${profileObj.name}!`);
-  // Perform actions using user data
-};
+
 const GoogleButton = () => {
+  const dispatch = useDispatch()
+  const navigate = useNavigate();
   return (
     <GoogleLogin
-      onSuccess={(res) => {
+      onSuccess={
+        (res) => {
         console.log(res);
-      }}
+        dispatch(setUser(res.credentials))
+        navigate("/dashboard")
+
+      }
+      
+
+    }
       onError={() => {
         console.log("Login Failed");
       }}

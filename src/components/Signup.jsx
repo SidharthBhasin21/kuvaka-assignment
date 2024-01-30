@@ -33,7 +33,6 @@ const Signup = () => {
             <div className='social-media'>
               <img src={facebook} alt='facebook icon' />
               <GoogleButton /> 
-              <img src={google} alt='google icon' />
               <img src={apple} alt='apple icon' />
             </div>
 

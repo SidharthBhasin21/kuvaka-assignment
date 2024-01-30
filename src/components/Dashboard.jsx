@@ -11,10 +11,12 @@ import subtitles from "../assets/icons/subtitles.png";
 import translation from "../assets/icons/translation.png";
 import folder from "../assets/icons/FolderNotchOpen.png";
 import logo from "../assets/icons/decrackle.png";
+import { useSelector } from "react-redux";
+import Error from "./Error";
 
 
 const Dashboard = () => {
-
+    const auth = useSelector(store => store.auth.credential)
 
   const [view, setView] = useState("add_new");
 
@@ -27,7 +29,7 @@ const Dashboard = () => {
   }
 
 
-  return (
+  return ( auth ?
     <div className="dashboard-container">
       <div className="sidebar">
         <div className="dashboard-logo">
@@ -91,7 +93,7 @@ const Dashboard = () => {
         }
         </div>
       </div>
-    </div>
+    </div> : <Error/>
   );
 };
 
