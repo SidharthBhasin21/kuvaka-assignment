@@ -1,6 +1,6 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
-
+import logo from "../assets/logo-white.png"
 const Hero = () => {
 
   const navigate  = useNavigate()
@@ -10,7 +10,7 @@ const Hero = () => {
   return (
     <div className='hero-container'>
         <div className='hero-ring'>
-          <img src='../assets/logo-white.png' alt='hero ring' />
+          <img src={logo} alt='hero ring' />
         </div>
         <div className='hero-text'>
             <h2>CHANGE YOUR HABITS
