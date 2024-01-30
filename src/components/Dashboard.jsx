@@ -17,7 +17,7 @@ import Error from "./Error";
 
 const Dashboard = () => {
     const auth = useSelector(store => store.auth.credential)
-
+    console.log(auth);
   const [view, setView] = useState("add_new");
 
   const renderUI = {

@@ -12,7 +12,7 @@ const GoogleButton = () => {
       onSuccess={
         (res) => {
         console.log(res);
-        dispatch(setUser(res.credentials))
+        dispatch(setUser(res.credential))
         navigate("/dashboard")
 
       }
