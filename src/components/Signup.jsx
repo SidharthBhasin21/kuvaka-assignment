@@ -1,11 +1,15 @@
 import React from 'react'
 import GoogleButton from './GoogleButton'
+import gif from '../assets/gifs/helix.gif'
+import google from '../assets/icons/google.png'
+import apple from '../assets/icons/apple.png'
+import facebook from '../assets/icons/facebook.png'
 
 const Signup = () => {
   return (
     <div className='signup-container' >
         <div className='gif-container'>
-         <img src='src\assets\gifs\helix.gif' alt='helix gif'  className='gif'/>
+         <img src={gif} alt='helix gif'  className='gif'/>
         </div>
         <div className='form-container'>
           <div className='form'>
@@ -27,10 +31,10 @@ const Signup = () => {
             <p className='signup-text'>Or Sign in with </p>
 
             <div className='social-media'>
-              <img src='src\assets\icons\facebook.png' alt='facebook icon' />
+              <img src={facebook} alt='facebook icon' />
               <GoogleButton /> 
-              <img src='src\assets\icons\google.png' alt='google icon' />
-              <img src='src\assets\icons\apple.png' alt='apple icon' />
+              <img src={google} alt='google icon' />
+              <img src={apple} alt='apple icon' />
             </div>
 
             <p>Already have an account?<span> Log in </span> </p>
