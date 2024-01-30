@@ -35,8 +35,9 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         "465092147184-8pvrc42qr1edmc6208i626ukeqin0agh.apps.googleusercontent.com"
       }
     >
+    <Provider store={appStore}>
       <RouterProvider router={router} />
+      </Provider>
     </GoogleOAuthProvider>
-    <Provider store={appStore}></Provider>
   </React.StrictMode>
 );
