@@ -10,7 +10,7 @@ const Hero = () => {
   return (
     <div className='hero-container'>
         <div className='hero-ring'>
-          <img src='src/assets/logo-white.png' alt='hero ring' />
+          <img src='../assets/logo-white.png' alt='hero ring' />
         </div>
         <div className='hero-text'>
             <h2>CHANGE YOUR HABITS
