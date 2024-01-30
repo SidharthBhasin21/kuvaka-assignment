@@ -1,5 +1,5 @@
 import React from "react";
-
+import logo from "../assets/logo-white.png";
 const Footer = () => {
   return (
     <div className="footer-container">
@@ -32,7 +32,7 @@ const Footer = () => {
           </ul>
         </div>
       </div>
-      <img src="src/assets/logo-white.png" / >
+      <img src={logo} / >
     </div>
   );
 };

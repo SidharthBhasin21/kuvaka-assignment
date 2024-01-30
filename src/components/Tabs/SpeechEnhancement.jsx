@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 import Modal from '../Modal';
+import audioFile from '../../assets/icons/file-audio.png'
+
 
 const SpeechEnhancement = () => {
     const [modalOpen, setModalOpen] = useState(false);
@@ -8,7 +10,7 @@ const SpeechEnhancement = () => {
   return (
     <div className='tab-container'>
         <p>Speech Enhancement</p>
-        <img src="src/assets/icons/file-audio.png" />
+        <img src={audioFile} />
         <button className='tab-btn' onClick={openModal}>Start speech enhancement</button>
     <p>*Audio and video file only</p>
     <p>View Recently speech enhancement files</p>

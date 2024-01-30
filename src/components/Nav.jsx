@@ -1,6 +1,6 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
-
+import logo from '../assets/logo-white.png'
 const Nav = () => {
   const navigate  = useNavigate()
   const handleSignup = () => {
@@ -13,7 +13,7 @@ const Nav = () => {
       <div className='menu'>
         
         <div className='logo'>
-          <img src='src\assets\logo-white.png' alt='logo' />
+          <img src={logo} alt='logo' />
         </div>
 
 

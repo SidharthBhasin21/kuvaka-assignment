@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import Modal from '../Modal';
+import translation from '../../assets/icons/translation.png'
 
 const Translation = () => {
   const [modalOpen, setModalOpen] = useState(false);
@@ -8,7 +9,7 @@ const Translation = () => {
   return (
     <div className='tab-container'>
         <p>translation</p>
-        <img src="src/assets/icons/translation.png" />
+        <img src={translation} />
         <button className='tab-btn' onClick={openModal}>Start Translation</button>
     <p>*Audio and video file only</p>
     <p>View Recently translation files</p>

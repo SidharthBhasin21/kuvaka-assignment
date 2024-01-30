@@ -1,5 +1,5 @@
 import React from 'react'
-
+import logo from '../assets/logo-black.png'
 const Trynow = () => {
   return (
     <div className='signup-container' >
@@ -16,7 +16,7 @@ const Trynow = () => {
                     <li>Access advanced analytics and reporting to track your organization's fitness and wellness goals</li>
                 </ul>
 
-                <img src='src\assets\logo-black.png' alt='helix gif' className='logo-black' />
+                <img src={logo} alt='helix gif' className='logo-black' />
             </div>
         
         </div>

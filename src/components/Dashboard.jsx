@@ -4,8 +4,13 @@ import SpeechEnhancement from "./Tabs/SpeechEnhancement";
 import Transcription from "./Tabs/Transcription";
 import Translation from "./Tabs/Translation";
 import Folders from "./Tabs/Folders";
-
-
+import profile from "../assets/icons/user-circle.png";
+import addnew from "../assets/icons/PlusCircle.png";
+import magicwand from "../assets/icons/MagicWand.png";
+import subtitles from "../assets/icons/subtitles.png";
+import translation from "../assets/icons/translation.png";
+import folder from "../assets/icons/FolderNotchOpen.png";
+import logo from "../assets/icons/decrackle.png";
 
 
 const Dashboard = () => {
@@ -26,7 +31,7 @@ const Dashboard = () => {
     <div className="dashboard-container">
       <div className="sidebar">
         <div className="dashboard-logo">
-          <img src="src/assets/icons/decrackle.png" alt="logo" />
+          <img src={logo} alt="logo" />
           <h2>Decrackle</h2>
         </div>
         <ul className="sidebar-list">
@@ -34,35 +39,35 @@ const Dashboard = () => {
             () => setView("add_new")
           }>
             {" "}
-            <img src="src/assets/icons/PlusCircle.png" />
+            <img src={addnew} />
             <span>Add New </span>
           </li>
           <li className="sidebar-list-links" onClick={() => {
             setView("speech_enhancement")
           }}>
             {" "}
-            <img src="src/assets/icons/MagicWand.png"  />
+            <img src={magicwand}  />
             <span>Speech Enhancement</span>
           </li>
           <li className="sidebar-list-links" onClick={() => {
             setView("transcription")
           }}>
             {" "}
-            <img src="src/assets/icons/subtitles.png" />
+            <img src={subtitles} />
             <span>Transcription</span>
           </li>
           <li className="sidebar-list-links" onClick={() => {
             setView("translation")
           }}>
             {" "}
-            <img src="src/assets/icons/translation.png" />
+            <img src={translation} />
             <span>Translation</span>
           </li>
           <li className="sidebar-list-links" onClick={() => {
             setView("folders")
           }}>
             {" "}
-            <img src="src/assets/icons/FolderNotchOpen.png" />
+            <img src={folder} />
             <span>Folders</span>
           </li>
         </ul>
@@ -75,7 +80,7 @@ const Dashboard = () => {
             <li>Support</li>
             <li>Plans</li>
             <li>
-              <img src="src/assets/icons/user-circle.png" />
+              <img src={profile} />
             </li>
           </ul>
         </div>
