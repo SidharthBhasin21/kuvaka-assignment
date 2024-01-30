@@ -1,0 +1,575 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500&family=Oxygen&display=swap');
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Open Sans";
+}
+
+
+/********************* SIGNUP PAGE ****************/
+.signup-container{
+ display: flex;
+ font-family: "Open Sans";
+}
+
+.gif-container {
+  width: 50%;
+  font-family: "Open Sans";  
+  background-color: #F3DE53;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}             
+.subscribe-container{
+  margin: 0 auto;
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  max-width: 31rem;
+  height: 100vh;
+  justify-content: center;
+}
+.subscribe-container p {
+  color: #2C2C2C;
+  font-size: 1rem;
+  max-width: 39.875rem;
+}
+.subscribe-container ul li {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 20px;
+}
+.gif-container h2 {
+  color: #2C2C2C;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.gif {
+  width: 59rem;
+}
+.logo-black {
+  width: 9rem;
+  align-self: center;
+  margin-top: 1rem;
+}
+.form-container{
+  width: 50%;
+}
+
+.form {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  max-width: 28rem;
+  height: 100vh;
+  justify-content: center;
+}
+.form-container h2 {
+  color: #545454;
+  font-size: 2.25rem;
+}
+.form-container label {
+  color: #989898;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 20px;
+}
+.form-container input {
+  width: 450px;
+  height: 60px;
+  border-radius: 7px; 
+  border: 1px solid #D9D9D9;
+  padding-block: auto;
+  padding-left: 21px;
+  font-size: 1.25rem;
+  color: #989898;
+  
+}
+.form-container input:focus {
+  outline: none;
+}
+
+.form-container p {
+  text-align: center;
+  color: #989898;
+  font-size: 1rem;
+  margin-block: 35px 30px;
+}
+.form-container p span {
+  color: #1877F2;
+
+}
+.form-container p span:hover {
+  cursor: pointer;
+  text-decoration: underline;
+
+}
+.button {
+  height: 60px;
+  background: #F3DE53;
+  color: #545454;
+  font-size: 1.25rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 7px; 
+
+}
+.button:hover {
+  background: #E2D33B;
+}
+.signup-text{
+  color: #989898;
+  font-size: 1.25rem;
+}
+.social-media {
+  display: flex;
+  justify-content: space-around;
+}
+
+/********************* LANDING PAGE ****************/
+.home-container {
+  background: linear-gradient(180deg, #F9D326 29.12%, #545454 80.32%);
+}
+
+.navbar {
+  background-color: #F9D326 ;
+  color:#FFF;
+  padding-inline: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.menu {
+  z-index: 1;
+  display: flex;
+  align-items: center;
+}
+.logo {
+  width: 50px;
+  background: #545454;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.logo img {
+  width: 50px;
+}
+.menu-list {
+  display: inline-flex;
+  padding: 24px 26px;
+  align-items: flex-start;
+  gap: 60px;
+}
+.menu-list li {
+  list-style: none;
+  font-size: 1.25rem;
+  font-weight: 400;
+  font-weight: bold;
+}
+.menu-list li:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.menu-btn {
+  display: flex;
+  gap: 1rem;
+}
+.login-btn {
+  background: #F9D326 ;
+  color: #FFF;
+  border: none;
+  padding: 14px 32px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.signup-btn{
+  background: #FFF;
+  color: #545454;
+  border: none;
+  padding: 14px 32px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin-block: 0.5rem;
+}
+/********************* HERO SECTION ****************/
+
+.vertical-strip {
+  background: #545454;
+  position: fixed;
+  left: 8.5rem;
+  width: 20rem;
+  height: 100vh;
+  
+}
+
+.hero-container {
+  display: flex;
+  height: 100vh;
+}
+.hero-ring {
+  z-index: 1;
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero-ring img {
+  width: 17rem;
+}
+.hero-text {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  align-self: center;
+}
+.hero-text h2 {
+  color: #545454;
+  font-family: 'Oswald', sans-serif;
+  font-size: 64px;
+  font-weight: 700;
+  letter-spacing: 9.6px;
+}
+.hero-text h2 span {
+  color: #FFF ;
+  font-size: 36px;
+  font-weight: 400;
+}
+.hero-text p {
+  color: #545454;
+  font-size: 24px;
+  font-weight: 400;
+}
+.hero-list {
+  display: flex;
+  gap: 2.5rem;
+  margin-left: 2.5rem;
+}
+.hero-list li{
+  color: #545454;
+  font-size: 1.5rem;
+  list-style-image: url('./assets/interface-check.png');
+  
+}
+.hero-btn {
+  width: 200px;
+  background: #545454;
+  border: none;
+  padding: 11px 40px;
+  color: #FFF;
+  font-size: 24px;
+}
+
+/********************* FEATURES SECTION ****************/
+
+.features-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.features {
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.features h2 {
+  color: #F9D326;
+  font-family: Oswald;
+  font-size: 4.7rem;
+  font-weight: 300;
+  margin-left: 11rem;
+}
+.features-section {
+  width: 75%;
+  background-color: #FFF;
+  padding: 3rem 5rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-inline: auto;
+  height: 70vh;
+  box-shadow: #2C2C2C 0px 4px 4px 0px;
+}
+
+.feature-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 1.5rem;
+  border-left: 5px solid #F9D326;
+  gap: 0.7rem;
+  width: 50%;
+}
+.feature-heading {
+  color: #545454;
+  font-family: Oswald;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.feature-description {
+  color: #545454;
+  font-family: "Open Sans";
+  font-size: 1rem;
+  font-weight: 300;
+
+}
+.feature-question {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+.feature-question h3 {
+  color: #F9D326;
+  font-family: Oswald;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.feature-question p {
+  color: #545454;
+  font-family: "Open Sans";
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+}
+.feature-question button {
+  background: #F9D326;
+  padding: 0.6rem 0.9rem;
+  border: none;
+  font-size: 1rem;
+  width: 7rem;
+}
+/********************* PRICING SECTION ****************/
+
+.pricing-container {
+  
+  
+}
+.pricing-description {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+}
+.detox-container {
+  
+}
+.card-container{
+  z-index: 1;
+  background: #F9D326;
+  width: 30%;
+}
+
+/********************* FOOTER SECTION ****************/
+
+.footer-container {
+  background-color: #545454;
+  display: flex;
+  justify-content: space-around;
+  padding: 4rem 6rem;
+}
+
+.footers-lists{
+  z-index: 1;
+  display: flex;
+  gap: 5rem;
+  color: #FFF;
+  font-family: "Open Sans";
+  justify-content: space-between;
+  width: 60%;
+}
+.single-footer-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.single-footer-list ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.single-footer-list h4{
+  color: #F3DE53;
+  font-weight: 700;
+  font-size: 1.25rem;
+  
+}
+.single-footer-list ul li {
+  font-size: 1rem;
+  font-weight: 400;
+}
+.footer-container img {
+  width: 230px;
+  align-self: center;
+}
+
+/********************* DASHBOARD ****************/
+
+.dashboard-container {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+.sidebar {
+  background-color: #1E1E1E;
+  padding-top: 3rem;
+  width: 20%;
+  height: 100vh;
+  color: #FFF;
+  display: flex;
+  flex-direction: column;
+}
+.sidebar-list {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  margin-block: 2rem;
+  font-family: "DM Sans";
+  justify-content: center;
+  align-items: flex-start;
+  list-style-type: none;
+}
+.sidebar-list-links{
+  padding-left: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+}
+.sidebar-list-links:hover {
+  border-left: 5px solid #BAEF58;
+  color: #BAEF58;
+}
+.dashboard-logo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.69263rem;
+  margin-bottom: 5.5rem;
+}
+.dashboard-logo h2{
+  color:  #F4F4F4;
+  font-family: Oxygen;
+  font-size: 2.2rem;
+  font-weight: 400;
+}
+
+
+
+.dashboard-main-container {
+  width: 80%;
+  padding-top: 3rem;
+  background: #111;
+}
+.dashboard-nav {
+
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  color: #FFF;
+}
+
+.dashboard-nav ul {
+  display: flex;
+  gap: 2rem;
+  margin-right: 2rem;
+  align-items: center;
+  justify-content: center;
+  list-style-type: none;
+  padding-right: 2rem;
+  list-style-type: none;
+}
+.tab-container {
+  width: 50%;
+  height: 50%;  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #FFF;
+  border: 2px dashed #fff;
+  border-radius: 27px; ;
+  gap: 36px;
+}
+.tabs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: -webkit-fill-available;
+}
+.tab-container img {
+  width: 64px;
+  height: 64px;
+}
+.tab-container p {
+  text-align: center;
+  font-family: "DM Sans";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+}
+.tab-btn {
+  border: none;
+  padding: 18px 125px;
+  text-align: center;
+  border-radius: 40px;
+  background:  linear-gradient(180deg, #BAEF58 0%, #79B509 100%);
+  cursor: pointer;
+  color:  #111111;
+  
+}
+/* Modal Styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9); /* Semi-transparent black background for the overlay */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  background: #111;
+  padding: 20px;
+  border-radius: 5px;
+  position: relative;
+  border: 2px dashed #fff;
+  padding: 5rem;
+  text-align: center;
+}
+.modal-upload {
+  display: flex;
+  gap: 3rem;
+  margin-top: 2rem;
+
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: #555;
+  outline: none;
+}
+
